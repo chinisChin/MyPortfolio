@@ -1,5 +1,5 @@
 /**
- * CHING MAE F. ABENOJA — INTERACTIVE PORTFOLIO ENGINE
+ * CHING MAE F. ABENOJA � INTERACTIVE PORTFOLIO ENGINE
  * Inspired by Justin Aran's portfolio: Luxury interactive feel,
  * Dynamic Analytics Lab, SQL Console, Interactive Canvas Chart,
  * Lightbox Modal, Funnel Calculator, and Theme Switcher.
@@ -163,7 +163,7 @@ function initAnalyticsLab() {
   // Channel datasets
   const channelData = {
     all: {
-      kpis: { reach: '248,500', conv: '4.82%', cac: '₱42.10', roas: '4.6x' },
+      kpis: { reach: '248,500', conv: '4.82%', cac: '?42.10', roas: '4.6x' },
       months: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun'],
       spend: [12000, 15500, 19000, 22400, 26000, 31500],
       conversions: [540, 720, 910, 1150, 1380, 1690],
@@ -175,7 +175,7 @@ function initAnalyticsLab() {
       ]
     },
     social: {
-      kpis: { reach: '136,000', conv: '5.40%', cac: '₱35.50', roas: '5.2x' },
+      kpis: { reach: '136,000', conv: '5.40%', cac: '?35.50', roas: '5.2x' },
       months: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun'],
       spend: [6000, 8000, 9500, 11000, 13500, 16000],
       conversions: [320, 460, 580, 710, 890, 1080],
@@ -186,7 +186,7 @@ function initAnalyticsLab() {
       ]
     },
     search: {
-      kpis: { reach: '52,400', conv: '6.15%', cac: '₱58.20', roas: '4.1x' },
+      kpis: { reach: '52,400', conv: '6.15%', cac: '?58.20', roas: '4.1x' },
       months: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun'],
       spend: [3500, 4200, 5100, 6000, 6800, 7900],
       conversions: [140, 190, 240, 290, 340, 420],
@@ -196,7 +196,7 @@ function initAnalyticsLab() {
       ]
     },
     events: {
-      kpis: { reach: '38,200', conv: '8.40%', cac: '₱24.80', roas: '6.8x' },
+      kpis: { reach: '38,200', conv: '8.40%', cac: '?24.80', roas: '6.8x' },
       months: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun'],
       spend: [2000, 2500, 3200, 4000, 4500, 5600],
       conversions: [180, 230, 310, 390, 470, 580],
@@ -207,7 +207,7 @@ function initAnalyticsLab() {
       ]
     },
     email: {
-      kpis: { reach: '21,900', conv: '3.90%', cac: '₱14.20', roas: '8.4x' },
+      kpis: { reach: '21,900', conv: '3.90%', cac: '?14.20', roas: '8.4x' },
       months: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun'],
       spend: [500, 800, 1200, 1400, 1200, 2000],
       conversions: [60, 80, 110, 130, 140, 190],
@@ -410,9 +410,9 @@ function initSqlConsole() {
       query: `<span class="sql-keyword">SELECT</span> organization, role, term_year, department_reach<br><span class="sql-keyword">FROM</span> pup_it_leadership_roles<br><span class="sql-keyword">WHERE</span> academic_year = <span class="sql-str">'2026-2027'</span>;`,
       headers: ['organization', 'role', 'term_year', 'department_reach'],
       rows: [
-        ['IBITS PUP Manila', 'President', 'A.Y. 2026–2027', '1,000+ IT Students'],
+        ['IBITS PUP Manila', 'President', 'A.Y. 2026�2027', '1,000+ IT Students'],
         ['Away From Keyboard (AFK 2026)', 'Overall Co-Head', 'May 2026', '1,250+ Attendees'],
-        ['IBITS PUP Manila', 'Vice President', 'Oct 2025 – 2026', 'Department Operations']
+        ['IBITS PUP Manila', 'Vice President', 'Oct 2025 � 2026', 'Department Operations']
       ]
     },
     3: {
@@ -463,11 +463,11 @@ function initSqlConsole() {
       runBtn.textContent = 'Executing...';
       runBtn.style.opacity = '0.7';
       setTimeout(() => {
-        runBtn.innerHTML = `▶ Query Executed (0.04s)`;
+        runBtn.innerHTML = `? Query Executed (0.04s)`;
         runBtn.style.opacity = '1';
         displayPreset(activePreset);
         setTimeout(() => {
-          runBtn.innerHTML = `▶ Run Query`;
+          runBtn.innerHTML = `? Run Query`;
         }, 1500);
       }, 300);
     });
@@ -513,7 +513,7 @@ function initProjectGallery() {
     dost: {
       category: 'Data Analytics & Data Management',
       title: 'DOST-ITDI Dataset Optimization & Auditing',
-      client: 'DOST – Industrial Technology Development Institute (ITDI)',
+      client: 'DOST � Industrial Technology Development Institute (ITDI)',
       role: 'Work Immersion Data Intern',
       tools: 'Google Sheets, Microsoft Excel, Data Auditing, Workflow Analysis',
       img: 'assets/pubmat_work_2.png',
@@ -564,7 +564,7 @@ function initProjectGallery() {
     gdg: {
       category: 'Event Marketing & Live Operations',
       title: 'Google Developer Groups (GDG) PUP Manila Event Marketing',
-      client: 'GDG on Campus – PUP Manila',
+      client: 'GDG on Campus � PUP Manila',
       role: 'Event Host & Logistics Volunteer',
       tools: 'StreamYard, Canva, Corporate Sponsor Marketing, Analytics Tracking',
       img: 'assets/pubmat_why_flare_1.png',
@@ -630,7 +630,25 @@ function initProjectGallery() {
       story: `
         <h4>Motion & Storytelling</h4>
         <p>Edited dynamic recap footage for campus events, capturing the emotion, attendee excitement, and high-energy moments. Handled pacing, multi-track audio mastering, and color grading.</p>
-        <p><a href="https://www.youtube.com/watch?v=yNioLfkl-Co" target="_blank" class="btn btn-primary" style="margin-top:10px; display:inline-flex;">▶ Watch Video on YouTube</a></p>
+        <p><a href="https://www.youtube.com/watch?v=yNioLfkl-Co" target="_blank" class="btn btn-primary" style="margin-top:10px; display:inline-flex;">? Watch Video on YouTube</a></p>
+      `
+    },
+    employee: {
+      category: 'Full-Stack Web Application',
+      title: 'Employee Management Application',
+      client: 'Open Source Project � GitHub',
+      role: 'Full-Stack Developer',
+      tools: 'Full-Stack, CRUD Operations, Database, UI/UX Design',
+      img: 'assets/pubmat_work_2.png',
+      impact: 'Complete CRUD employee management system with an efficient admin UI and optimized database operations.',
+      story: `
+        <h4>Project Overview</h4>
+        <p>Developed a comprehensive employee management application that enables organizations to efficiently track, create, update, and delete employee records through a clean and intuitive admin interface.</p>
+        <h4>Technical Implementation</h4>
+        <p>Implemented full CRUD operations with database integration, form validation, and a responsive front-end to ensure seamless usability for HR teams and administrators.</p>
+        <h4>Outcome</h4>
+        <p>Delivered a production-ready management tool demonstrating proficiency in full-stack development, database design, and user-centered interface engineering.</p>
+        <p><a href="https://github.com/chinisChin/Employee-Management-App" target="_blank" class="btn btn-primary" style="margin-top:10px; display:inline-flex;">?? View on GitHub</a></p>
       `
     }
   };
@@ -685,7 +703,7 @@ function initClipboardAndContact() {
     copyBtn.addEventListener('click', () => {
       const email = 'abenojachingmae@gmail.com';
       navigator.clipboard.writeText(email).then(() => {
-        showToast('✓ Email copied to clipboard: abenojachingmae@gmail.com');
+        showToast('? Email copied to clipboard: abenojachingmae@gmail.com');
       }).catch(() => {
         showToast('abenojachingmae@gmail.com');
       });
@@ -756,9 +774,9 @@ function initCardDeckCarousel() {
   const slides = [
     {
       image: 'assets/profile.jpg',
-      badge: 'Ching Mae · President',
+      badge: 'Ching Mae � President',
       title: 'Ching Mae F. Abenoja',
-      caption: 'IBITS President (2026–2027) · Data Analyst & Marketing Strategist'
+      caption: 'IBITS President (2026�2027) � Data Analyst & Marketing Strategist'
     },
     {
       image: 'assets/pubmat_women_hataw.png',
@@ -769,7 +787,7 @@ function initCardDeckCarousel() {
     {
       image: 'assets/pubmat_why_flare_1.png',
       badge: 'Brand Identity',
-      title: 'Why Flare? · Recruitment Series',
+      title: 'Why Flare? � Recruitment Series',
       caption: 'Cohesive branding pubmat engaging student software developers.'
     },
     {
